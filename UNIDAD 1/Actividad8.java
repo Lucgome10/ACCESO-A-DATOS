@@ -20,17 +20,14 @@ public class Actividad8 {
 		byte[] b2 = new byte[2];
 		byte[] b5 = new byte[5];
 		
-		
 		while(true) {
 			
 			try {
 
-				
-				if (raf.read() == -1) {
+				if(raf.read(b)==-1) {
+					System.out.println("*** lectura finalizada. ***");
 					break;
 				}
-				
-				raf.read(b);
 				raf.skipBytes(1);
 				System.out.println("Nombre: " + new String(b));
 				
@@ -41,27 +38,21 @@ public class Actividad8 {
 				raf.read(b5);
 				raf.skipBytes(1);
 				System.out.println("Salario: " + new String(b5));
-
+				
 				raf.read(b2);
 				raf.skipBytes(1);
-				System.out.println("Antigüedad: " + new String(b2));
-		
+				System.out.println("AntigÃ¼edad: " + new String(b2) + "\n");
 				
-				
+				raf.skipBytes(1);
+						
 			} catch (Exception e) {
+				e.printStackTrace();
 				break;
 			}
-
 			
 		}
-			
-						
+								
 		raf.close();
-		
-		
-		
-
-		
 		
 	}
 
