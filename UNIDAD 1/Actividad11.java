@@ -8,14 +8,14 @@ import java.io.IOException;
 import java.util.Scanner;
 
 // Escribe un programa en Java que permita escribir en un fichero cadenas pedidas 
-//por consola el usuario hasta que introduzca una cadena determinada (por ejemplo ìFINî).
+//por consola el usuario hasta que introduzca una cadena determinada (por ejemplo ‚ÄúFIN‚Äù).
 public class Actividad11 {
 		
 	public static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) throws IOException {
 
-		System.out.println("hola amigo, escribe aquÌ:");
+		System.out.println("hola amigo, escribe aqu√≠:");
 		File file = new File("C:\\DIR1\\actividad11.txt");
 		
 		if (!file.exists()) {
@@ -27,7 +27,6 @@ public class Actividad11 {
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine();
 			if (line.contains("FIN")) {
-				line.
 				line.subSequence(0, 0)
 				break;
 			}
