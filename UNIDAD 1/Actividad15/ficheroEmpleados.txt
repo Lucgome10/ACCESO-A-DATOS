@@ -1,0 +1,100 @@
+Amanda;Jefe de Equipo;8;618688698;Indefinido
+Lucía;Analista;4;638800458;Indefinido
+Manuel;Jefe de Equipo;6;683238687;Indefinido
+Lucía;Analista;5;613449956;Indefinido
+Amanda;Programador;2;625868456;Temporal
+Lucía;Analista;7;606506426;Indefinido
+Alba;Tester;5;611874521;Temporal
+Alba;Analista;8;632811377;Temporal
+Alba;Jefe de Equipo;8;681243290;Temporal
+Alba;Becario;1;682485045;Indefinido
+Alba;Jefe de Equipo;3;692496207;Temporal
+Ignacio;Jefe de Equipo;6;623152791;Temporal
+Manuel;Programador;3;697789220;Temporal
+Manuel;Programador;1;621807943;Indefinido
+Ignacio;Jefe de Equipo;5;680715383;Indefinido
+Amanda;Jefe de Equipo;5;688006272;Temporal
+Alba;Tester;8;688793931;Indefinido
+Lucía;Analista;6;666235132;Temporal
+Ignacio;Jefe de Equipo;3;626250709;Indefinido
+Amanda;Analista;4;648763788;Indefinido
+Amanda;Jefe de Equipo;3;637938793;Temporal
+Manuel;Analista;2;690377074;Indefinido
+Alba;Becario;3;618461958;Temporal
+Alba;Programador;8;602751103;Indefinido
+Ignacio;Becario;5;660907756;Temporal
+Lucía;Programador;2;603788707;Indefinido
+Lucía;Analista;2;614043637;Indefinido
+Lucía;Becario;8;631247595;Temporal
+Ignacio;Becario;1;625164389;Temporal
+Ignacio;Becario;3;681032157;Indefinido
+Federico;Becario;8;695599440;Temporal
+Manuel;Analista;4;649459450;Indefinido
+Alba;Jefe de Equipo;5;687604655;Temporal
+Ignacio;Jefe de Equipo;5;691842538;Indefinido
+Alba;Tester;7;673197754;Indefinido
+Federico;Becario;5;623363819;Temporal
+Manuel;Analista;7;668484536;Temporal
+Amanda;Jefe de Equipo;5;694253917;Indefinido
+Ignacio;Analista;3;620012345;Indefinido
+Federico;Programador;6;651876740;Indefinido
+Amanda;Jefe de Equipo;5;604337899;Temporal
+Lucía;Analista;1;634890122;Indefinido
+Manuel;Jefe de Equipo;1;627781249;Temporal
+Alba;Jefe de Equipo;2;626957674;Temporal
+Federico;Becario;6;612541513;Indefinido
+Amanda;Tester;4;672597786;Indefinido
+Lucía;Tester;4;678070816;Temporal
+Manuel;Becario;1;639048786;Temporal
+Alba;Tester;1;655750440;Indefinido
+Amanda;Analista;8;604196641;Indefinido
+Ignacio;Jefe de Equipo;7;651210750;Indefinido
+Manuel;Jefe de Equipo;2;690657162;Indefinido
+Federico;Analista;8;615618503;Temporal
+Manuel;Becario;6;624344743;Indefinido
+Manuel;Programador;3;636269886;Temporal
+Federico;Analista;3;616923362;Indefinido
+Manuel;Programador;5;672034917;Temporal
+Federico;Analista;6;695363975;Temporal
+Federico;Becario;4;662571380;Temporal
+Federico;Analista;3;688679846;Temporal
+Amanda;Analista;8;636549529;Indefinido
+Alba;Tester;4;637343794;Temporal
+Lucía;Becario;3;645999854;Indefinido
+Amanda;Programador;2;690787964;Temporal
+Lucía;Tester;2;606725599;Temporal
+Ignacio;Tester;8;673938925;Temporal
+Federico;Programador;2;631731984;Temporal
+Ignacio;Analista;2;626452376;Temporal
+Manuel;Analista;6;691850394;Indefinido
+Alba;Becario;4;684999235;Indefinido
+Manuel;Tester;6;619025890;Temporal
+Federico;Becario;3;696746890;Indefinido
+Ignacio;Becario;2;609750308;Indefinido
+Amanda;Becario;7;623517809;Temporal
+Federico;Analista;8;673333637;Temporal
+Ignacio;Jefe de Equipo;1;643745893;Temporal
+Ignacio;Analista;5;669398635;Indefinido
+Lucía;Tester;2;651355820;Indefinido
+Ignacio;Programador;8;666254991;Temporal
+Ignacio;Analista;3;625440723;Temporal
+Lucía;Becario;2;634570472;Temporal
+Ignacio;Programador;6;635800475;Temporal
+Amanda;Analista;1;634729578;Temporal
+Amanda;Becario;5;611030401;Temporal
+Manuel;Tester;8;609990720;Indefinido
+Lucía;Tester;4;627234950;Indefinido
+Federico;Becario;3;617368409;Indefinido
+Ignacio;Programador;5;646211413;Temporal
+Manuel;Jefe de Equipo;3;603237468;Indefinido
+Lucía;Analista;8;607046937;Temporal
+Alba;Programador;2;607954682;Temporal
+Lucía;Tester;4;639751296;Temporal
+Ignacio;Programador;7;693104543;Indefinido
+Ignacio;Tester;2;654375007;Indefinido
+Manuel;Jefe de Equipo;8;663897700;Indefinido
+Lucía;Analista;4;664915998;Indefinido
+Manuel;Analista;7;678193317;Indefinido
+Federico;Programador;4;630389708;Indefinido
+Ignacio;Analista;3;620802592;Indefinido
+Manuel;Becario;7;652231098;Indefinido
