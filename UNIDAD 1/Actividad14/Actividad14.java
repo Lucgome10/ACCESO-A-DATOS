@@ -1,81 +1,66 @@
-package act14;
+package actividad14;
 
 import java.io.*;
-/**
- * 
- * @author LUCAS GÓMEZ RODERO
- *
- */
+
 public class Actividad14 {
 
-	/*
-	   Escribe un programa en Java que permita comparar el contenido de dos ficheros. En el caso de que
-	no sean iguales deberá informarse por pantalla de las líneas (numeradas) donde se han encontrado
-	diferencias imprimiendo las líneas por pantalla. 	 
-	 */
-
 	public static void main(String[] args) {
-
-		//Definimos la ruta relativa de los dos ficheros que vamos a comparar.
-		File archivo1 = new File("src\\act14\\archivo1.txt");
-		File archivo2 = new File("src\\act14\\archivo2.txt");
 		
-		//Contar el número de líneas de ambos ficheros, para poder saber cuántas líneas debemos leer en el comparador.
-		var totalLineas1 = countLineBufferedReader(archivo1.getAbsolutePath());
-		var totalLineas2 = countLineBufferedReader(archivo2.getAbsolutePath());
+		File file1 = new File("src\\actividad14\\file1.txt");
+		File file2 = new File("src\\actividad14\\file2.txt");
 		
-		//Averiguamos cuál de los ficheros tiene más líneas, y creamos una variable con la que tenga más.
-		//Prefiero asignar el valor de esta forma para acostumbrarme a ella de cara a aparentar más nivel en entrevistas técnicas :)
-		int totalLineasContar = (totalLineas1 > totalLineas2) ? totalLineas1 : totalLineas2;
-
 		
-		// Genero los BufferedReader dentro del try para no tener que cerrarlos a mano.
-		try (BufferedReader br1 = new BufferedReader(new FileReader(archivo1));
-				BufferedReader br2 = new BufferedReader(new FileReader(archivo2));) {
+		File file = new File("/mnt/sdcard/abc.txt");
+		LineNumberReader lineNumberReader1;
+		LineNumberReader lineNumberReader2;
+		int lines1 = 0;
+		int lines2 = 0;
+		try {
+			lineNumberReader1 = new LineNumberReader(new FileReader(file1));
+			lineNumberReader1.skip(Long.MAX_VALUE);
+			lines1 = lineNumberReader1.getLineNumber() + 1;
+			lineNumberReader1.close();
 			
-			//Crear ficheros en caso de que no existan.
-			archivo1.createNewFile();
-			archivo2.createNewFile();
+			lineNumberReader2 = new LineNumberReader(new FileReader(file2));
+			lineNumberReader2.skip(Long.MAX_VALUE);
+			lines2 = lineNumberReader2.getLineNumber() + 1;
+			lineNumberReader2.close();
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		
+		System.out.println("file1 tiene " + lines1 + " líneas");
+		System.out.println("file2 tiene " + lines2 + " líneas");
 
-			String lineas1 = "";
-			String lineas2 = "";
-
-			int numLinea = 1;
-
+		
+		BufferedReader br1;
+		BufferedReader br2;
+		
+		String line1;
+		String line2;
+		
+		int numLinea = 0;
+		
+		try {
+			br1 = new BufferedReader(new FileReader(file1));
+			br2 = new BufferedReader(new FileReader(file2));
 			do {
-				lineas1 = br1.readLine();
-				lineas2 = br2.readLine();
-
-				// Evito que las cadenas sean nulas para poder hacer comparaciones de líneas en blanco.
-				if (lineas1 == null) {
-					lineas1 = "";
-				}
-				if (lineas2 == null) {
-					lineas2 = "";
-				}
-				if (!lineas1.equals(lineas2)) {
-					System.out.println("Línea " + numLinea + ":");
-					System.out.println("\t Archivo 1: " + lineas1);
-					System.out.println("\t Archivo 2: " + lineas2);
-				}
 				numLinea++;
-			} while  (numLinea < totalLineasContar);
-
-		} catch (IOException e) {
+				line1 = br1.readLine();
+				line2 = br2.readLine();
+				
+				if (!line1.equals(line2)) {
+					System.out.println("Diferencia encontrada en la línea " + numLinea + ": " + "\n\tFile1: " + line1 + "\n\tFile2: " + line2);
+				}
+			} while (line1!=null && line2!=null);
+		} catch (FileNotFoundException e) {
 			e.printStackTrace();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		} catch (NullPointerException npe) {
+			npe.printStackTrace();
 		}
+	
 	}
 
-	// Método auxiliar para obtener el número de líneas de un fichero. Lo he obtenido de: https://mkyong.com/java/how-to-get-the-total-number-of-lines-of-a-file-in-java/
-	public static int countLineBufferedReader(String fileName) {
-
-		int lines = 0;
-		try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-			while (reader.readLine() != null) lines++;
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return lines;
-
-	}
 }
