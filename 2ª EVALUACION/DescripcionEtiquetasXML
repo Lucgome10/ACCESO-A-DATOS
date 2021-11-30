@@ -1,0 +1,43 @@
+DOCUMENTACION SOBRE HIBERNATE:
+
+hibernate-mapping: Es el nodo raíz. 
+auto-import: true por defecto. Permite utilizar nombres de clase no cualificados en el lenguaje de consultas.
+default-access: estrategia de Hibernate para acceder a todas las propiedades. Puede ser una implementación personalizada de PropertyAccessor.
+default-cascade: Cascade style por defecto.
+default-lazy: Valor por defecto para atributos de clase y mapeos de colecciones.
+
+
+class: sirve para declarar una clase persistente.
+catalog: nombre del catalog de una base de datos.
+dynamic-insert: especifica que las INSERT SQL deberían ser generadas en tiempo de ejecución y contener 
+				únicamente las columnas cuyos valores no sean nulos.
+dynamic-update: especifica qeu las UPDATE SQL deberían ser generadas en runtime y contener 
+				únicamente las columnas cuyos valores hayan cambiado.
+mutable: especifica que una instancia de clase no sea mutable.
+name: nombre de la clase o interfaz Java fully qualified. Si este atributo no aparece, 
+	se asumen que el mapeo es para una entidad que no sea POJO.
+optimistic-lock: determina la optimistic locking strategy.
+polymorphism: determina si se utilizan consultas de polimorfismo explícitas o implícitas.
+select-before-update: especifica que Hibernate no debería realizar una UPDATE a menos que 
+					esté seguro de que el objecto realmente haya sido modificado.
+					Únicamente cuando un objeto transient ha sido asociado con una nueva
+					sesión utilizando update(), Hibernate realizará una SQL SELECT extra 
+					para determinar si el UPDATE era realmente necesario.
+table: el nombre de la tabla de la BBDD. Es un atributo opcional.
+
+
+id: Las clases mapeadas deben declarar la columna de clave primaria de la tabla de la base 
+	de datos. La mayoría de clases tendrán un estilo JavaBeans propiedad de identificador único
+	de la instancia. El elemento id define el mapeado de esa propiedad a la columna de clase primaria.
+name: nombre del identificador de propiedad.
+type: nombre que indica el tipo de Hibernate.	
+
+
+
+
+
+					
+
+
+
+
